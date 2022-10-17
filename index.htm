@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Kornelia" />
+    <title>Przepisy</title>
+    <meta name="description" content="Moje ulubione przepisy kulinarne" />
+    <style>
+      h1,
+      h2,
+      h3,
+      h4,
+      h5 {
+        font-weight: 400;
+        margin-block: 0;
+      }
+
+      html {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #76abdf;
+        font-family: Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .header__subheading {
+        font-size: 1.125rem;
+      }
+
+      .nav-item,
+      .nav-item:hover,
+      .nav-item:visited,
+      .nav-item:active,
+      .nav-item:link {
+        color: #002244;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 68rem;
+        padding: 0.5rem 1rem;
+      }
+
+      .recipe {
+        background: #f0f8ff;
+        border-radius: 0.5rem;
+        margin: 0 0.5rem 1rem;
+        padding: 1rem;
+      }
+
+      .recipe__heading {
+        color: #002d62;
+        font-weight: bold;
+        margin-top: 1rem;
+      }
+
+      .recipe__heading--primary {
+        font-size: 2rem;
+        font-weight: normal;
+        line-height: 1.15;
+        margin-bottom: 1rem;
+      }
+
+      .recipe__image {
+        aspect-ratio: 16 / 9;
+        border-radius: 0.5rem;
+        object-fit: cover;
+        width: 100%;
+      }
+
+      .video {
+        aspect-ratio: 16 / 9;
+        border-radius: 0.5rem;
+        width: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>Moje ulubione przepisy</h1>
+        <h2 class="header__subheading">Lista moich ulubonych przepisów kulinarnych</h2>
+      </header>
+      <nav>
+        <ol>
+          <li>
+            <a href="#recipe-1" class="nav-item">Tort truskawkowy</a>
+          </li>
+          <li>
+            <a href="#recipe-2" class="nav-item">Naleśniki</a>
+          </li>
+          <li>
+            <a href="#recipe-1" class="nav-item">Przepis 3</a>
+          </li>
+        </ol>
+      </nav>
+      <main>
+        <article class="recipe" id="recipe-1">
+          <h3 class="recipe__heading recipe__heading--primary">
+            Tort truskawkowy
+          </h3>
+
+          <img src="https://i.imgur.com/Mk7vbjl.png" alt="Tort truskawkowy" class="recipe__image" />
+
+          <h4 class="recipe__heading">Składniki na biszkopt</h4>
+
+          <ul>
+            <li>niepełna szklanka mąki pszennej tortowej - około 140 g</li>
+            <li>1/3 szklanki mąki ziemniaczanej - do 50 g skrobi</li>
+            <li>7 większych jajek - do 400 g po rozbiciu</li>
+            <li>3/4 szklanki drobnego cukru - około 150 g</li>
+          </ul>
+
+          <h4 class="recipe__heading">Składniki na krem z mascarpone</h4>
+          <ul>
+            <li>750 g serka mascarpone</li>
+            <li>600 ml śmietanki kremówki 36%</li>
+            <li>120 g cukru pudru</li>
+          </ul>
+
+          <h4 class="recipe__heading">Pozostałe składniki</h4>
+          <ul>
+            <li>700 g truskawek - świeże lub mrożone</li>
+            <li>2 łyżki drobnego cukru - do 35 g</li>
+            <li>3 łyżki soku z cytryny</li>
+          </ul>
+
+          <hr />
+
+          <h4 class="recipe__heading">Przygotowanie</h4>
+          <p>Jajka wyjmij z lodówki na godzinę przed szykowaniem biszkoptu. Serek mascarpone oraz śmietanka kremówka 36 % powinny być trzymane w lodówce. Oba te składniki muszą być mocno schłodzone.</p>
+          <p>Forma do pieczenia: tortownica o średnicy 26 cm.</p>
+          <p>Pieczenie: 180 stopni, środkowa półka z opcją pieczenia góra/dół.</p>
+          <p>Czas pieczenia: około 30 minut.</p>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/v2voRjU3MFs"
+            title="Przepis na tort truskawkowy"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+
+        <article class="recipe" id="recipe-2">
+          <h3 class="recipe__heading recipe__heading--primary">
+            Naleśniki
+          </h3>
+
+          <img src="https://i.imgur.com/lLAo3Uk.png" alt="Naleśniki" class="recipe__image" />
+
+          <h4 class="recipe__heading">Składniki</h4>
+
+          <ul>
+            <li>1 pełna szklanka i 2 łyżki mąki pszennej</li>
+            <li>3 średnie jajka</li>
+            <li>1 szklanka mleka</li>
+            <li>1 szklanka wody - zwykła lub gazowana</li>
+            <li>4 łyżki oleju roślinnego</li>
+            <li>szczypta soli</li>
+          </ul>
+
+          <hr />
+
+          <h4 class="recipe__heading">Przygotowanie</h4>
+          <p>
+            Do miski wsyp pełną szklankę mąki pszennej + jeszcze dwie łyżki mąki. Będzie to około 230 gramów mąki. Używam zazwyczaj mąki pszennej tortowej lub mąki uniwersalnej. Wbij trzy średniej wielkości jajka i wlej szklankę mleka oraz
+            szklankę wody. Dodaj szczyptę soli i wlej cztery łyżki oleju roślinnego np. ryżowego lub z pestek winogron.
+          </p>
+          <p>
+            Miksuj ciasto przez kilka minut na gładką masę, by pozbyć się ewentualnych grudek. Ciasto możesz odstawić na 30 minut, by odpoczęło. Nie jest to jednak konieczne, chociaż zawsze polecam zostawić ciasto, by uzyskało idealną
+            konsystencję.
+          </p>
+          <p>
+            Jeśli szykujesz ciasto na naleśniki na słodko, to zamiast wody możesz użyć ulubionego, owocowego napoju gazowanego. Olej możesz też zastąpić roztopionym i przestudzonym masłem lub olejem kokosowym (również roztopionym i
+            przestudzonym).
+          </p>
+          <p>
+            Dobrze nagrzej płaską patelnię - najlepiej specjalnie przystosowaną do smażenia naleśników. Nie ustawiaj od razu najwyższej mocy palnika. Ustaw średnią moc i poczekaj aż ciepło rozprowadzi się równo po całej powierzchni
+            użytkowej patelni.
+          </p>
+          <p>
+            Zamieszaj ciasto i małą chochlą odmierz porcję na naleśnika. Wylej na patelnię tylko tyle ciasta, by masa przykryła powierzchnię patelni. Przy każdym nalewaniu porcji na naleśnika podnoszę patelnię nad palnik. Od razu poruszam
+            patelnią tak, by ciasto rozeszło się po całej powierzchni. Naleśniki powinny być cienkie. Możesz nawet za każdym razem odlać nadmiar ciasta z powrotem do miski. Wówczas wyjdzie Ci więcej, ale super cienkich naleśników.
+          </p>
+          <p>
+            Po około 40-50 sekundach przewracaj placek na drugą stronę. Druga strona potrzebuje zazwyczaj o połowę mniej czasu. Tutaj może Ci się przydać płaska łopatka do przewracania naleśników. W ten sposób usmaż wszystkie naleśniki.
+          </p>
+          <iframe class="video" src="https://www.youtube.com/embed/cQcLdDmYwCU" title="Naleśniki" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+
+        <article class="recipe" id="recipe-3">
+          <h3 class="recipe__heading recipe__heading--primary">
+            Naleśniki
+          </h3>
+
+          <img
+            src="https://i.imgur.com/wuDIu9n.png"
+            alt="Babeczki czekoladowe
+        "
+            class="recipe__image"
+          />
+
+          <h4 class="recipe__heading">Składniki</h4>
+
+          <ul>
+            <li>2 szklanki mąki pszennej tortowej - 320 g</li>
+            <li>2 średnie jajka</li>
+            <li>pół szklanki oleju roślinnego</li>
+            <li>pół szklanki drobnego cukru - około 130 g</li>
+            <li>1 szklanka mleka - 250 ml</li>
+            <li>2 płaskie łyżki kakao</li>
+            <li>pół tabliczki gorzkiej czekolady - 50 g</li>
+            <li>2 łyżeczki proszku do pieczenia</li>
+          </ul>
+
+          <hr />
+
+          <h4 class="recipe__heading">Przygotowanie</h4>
+          <p>Do średniej miski przesiej razem dwie szklanki mąki pszennej oraz dwie łyżeczki proszku do pieczenia i dwie płaskie łyżki kakao. Osobno posiekaj nożem czekoladę i wszystko razem wymieszaj.</p>
+          <p>
+            W dużej misce umieść cukier oraz wbij dwa jajka. Możesz dodać też szczyptę soli. Jajka ubijaj z cukrem przy pomocy miksera. Możesz też użyć zwykłej trzepaczki. Chodzi tylko o dokładne wymieszanie jajek z cukrem. Czasem jednak
+            (jeśli i tak sięgam po mikser) ubijam cukier z jajkami na puch.
+          </p>
+          <p>
+            Do jajek wlej też pół szklanki oleju (ryżowy lub z pestek winogron będą super) oraz szklankę mleka. Mleko możesz wcześniej podgrzać do temperatury nie wyższej niż 35 stopni. Całość wymieszaj lub zmiksuj chwilę na najniższych
+            obrotach.
+          </p>
+          <p>Do miski ze składnikami płynnymi wsyp składniki suche. Ciasto wymieszaj przy pomocy łyżki lub szpatułki.</p>
+          <p>
+            Ciasto na babeczki czekoladowe nakładaj łyżką lub przy pomocy rękawa cukierniczego z większym otworem. Nie wypełniaj do końca foremek. Zostaw najprzyjemniej 1,5 cm wolnej przestrzeni wewnątrz foremki. Babeczki jeszcze urosną.
+          </p>
+          <p>
+            Formę z babeczkami czekoladowymi umieść na środkowej półce w piekarniku nagrzanym do 170-175 stopni. Opcja pieczenia: góra/dół. Babeczki w papilotkach i w formie pieką się około 25-30 minut. Jeśli będziesz piec babeczki w samych
+            kartonikach, to mogą być gotowe o pięć minut szybciej. Babeczki czekoladowe powinny ładnie urosnąć i zarumienić się od góry.
+          </p>
+          <p>
+            Po około 20 minutach pieczenia ostrożnie uchyl drzwi piekarnika i wbij w ciasto drewniany patyczek do szaszłyków. Jeśli po wyjęciu patyczek jest suchy, to znaczy, że babeczki są już upieczone. W czekoladowych wypiekach istotne
+            jest to, by nie piec ich za długo. Jeśli ciasto piecze się dłużej, niż jest taka potrzeba, to traci wilgoć i robi się suche.
+          </p>
+          <p>Po upieczeniu lekko uchyl drzwi piekarnika. Polecam zablokować drzwiczki rękawicą kuchenną, by zrobić tylko małą szparkę. Po 10 minutach otwórz drzwi do połowy a po kolejnych 10 minutach wyjmij babeczki z pieca.</p>
+          <iframe
+            class="video"
+            src="https://www.youtube.com/embed/QvL91tJr-cY"
+            title="Babeczki czekoladowe"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </main>
+    </div>
+  </body>
+</html>
